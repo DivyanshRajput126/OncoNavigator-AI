@@ -2,151 +2,192 @@
 
 ### From Detection to Care
 
-OncoNavigator AI is an AI-powered healthcare platform currently under development that aims to assist in tumor detection, segmentation, staging, healthcare guidance, and specialist recommendations.
+OncoNavigator AI is an AI-powered healthcare platform designed to assist in tumor analysis by combining deep learning-based medical image processing with Retrieval-Augmented Generation (RAG) and agentic AI.
 
-The project combines deep learning-based medical image analysis with Retrieval-Augmented Generation (RAG) and agentic AI to provide a comprehensive workflow that extends beyond diagnosis. The goal is to help users understand medical imaging results, visualize tumor regions, access educational cancer-related information, and discover relevant healthcare providers.
+The platform aims to provide an end-to-end workflow covering tumor detection, segmentation, staging assistance, medical knowledge retrieval, and healthcare navigation.
+
+The project is currently under active development, with the **tumor segmentation module successfully developed and trained**.
 
 ---
 
-## Current Status
+# Current Status
 
 🚧 **Project Under Active Development**
 
-This repository is currently a work in progress. Features and architecture may evolve as development progresses.
+## Completed Modules
 
-### Planned Modules
+✅ **Tumor Segmentation Model**
 
-* Tumor Classification Model
-* Tumor Segmentation Model
-* Medical Image Visualization
-* RAG-Based Medical Knowledge Assistant
-* Specialist & Hospital Recommendation Agent
-* Healthcare Navigation Dashboard
+- Deep learning-based tumor segmentation pipeline implemented.
+- Model trained to identify and segment tumor regions from medical images.
+- Generates pixel-level segmentation masks.
+- Supports visualization of tumor boundaries through segmentation overlays.
 
----
+## In Development
 
-## Planned Features
-
-### AI-Powered Tumor Analysis
-
-* Tumor detection and classification
-* Tumor stage prediction
-* Confidence scoring
-* Multi-class support
-
-### Tumor Segmentation
-
-* Tumor boundary detection
-* Segmentation mask generation
-* Visual overlays on medical images
-
-### RAG Knowledge Assistant
-
-* Cancer-related knowledge retrieval
-* Symptom explanations
-* Treatment information
-* General care guidance
-* Medical FAQ support
-
-### Vector Database Integration
-
-The platform will utilize a vector database to store and retrieve healthcare knowledge efficiently.
-
-#### Planned Knowledge Sources
-
-* Cancer care guidelines
-* Treatment information
-* Tumor staging references
-* Educational resources
-* Patient care recommendations
-* Frequently asked questions
-
-#### Possible Technologies
-
-* ChromaDB
-* FAISS
-* Pinecone
-
-### Healthcare Recommendation Agent
-
-* Nearby hospital discovery
-* Specialist recommendations
-* Contact information retrieval
-* Hospital websites and details
-* Specialty-based filtering
+- Tumor Classification Model
+- Tumor Stage Prediction
+- Medical Image Visualization Dashboard
+- RAG-Based Medical Knowledge Assistant
+- Healthcare Recommendation Agent
 
 ---
 
-## Proposed Technology Stack
+# Tumor Segmentation Module
 
-### Frontend
+The segmentation component focuses on automatically identifying tumor regions from medical images.
 
-* React.js
-* Tailwind CSS
-* TypeScript
+### Capabilities
 
-### Backend
+- Tumor region localization
+- Pixel-level segmentation
+- Binary mask generation
+- Tumor boundary visualization
+- Automated evaluation using segmentation metrics
 
-* FastAPI
-* Python
+### Supported Tumor Categories
 
-### AI & Machine Learning
+The current segmentation pipeline is developed for brain tumor analysis, including:
 
-* PyTorch
-* OpenCV
-* EfficientNet / ResNet / Vision Transformer
-* U-Net / Attention U-Net / UNet++
+- Meningioma
+- Glioma
+- Pituitary Tumor
 
-### Agentic AI & RAG
 
-* LangGraph
-* LangChain
-* Embedding Models
-* Retrieval-Augmented Generation (RAG)
+### Model Architecture
 
-### Data Layer
+Current deep learning approach:
 
-* PostgreSQL
-* ChromaDB / FAISS
+- U-Net based segmentation architecture
+- PyTorch implementation
+- Medical image preprocessing pipeline
+- Mask-based training and evaluation workflow
 
----
+### Evaluation Metrics
 
-## System Workflow
+The segmentation model is evaluated using:
 
-1. User uploads a medical image (MRI/CT scan).
-2. Classification model predicts tumor type and stage.
-3. Segmentation model identifies and highlights tumor regions.
-4. Segmented tumor area is displayed to the user.
-5. RAG-powered assistant provides educational information related to the detected condition.
-6. Agent discovers nearby specialists and hospitals relevant to the detected tumor type.
-7. Contact details, websites, and healthcare information are presented through the platform.
+- Mean Intersection over Union (IoU)
+- Dice Score
+- Pixel Accuracy
+
 
 ---
 
-## Vision
+# Planned Features
 
-To create an intelligent healthcare assistant that bridges the gap between medical image analysis and patient support by combining computer vision, retrieval systems, and agentic AI into a unified platform.
+## AI-Powered Tumor Analysis
+
+- Tumor detection and classification
+- Tumor type prediction
+- Stage prediction assistance
+- Confidence scoring
+- Multi-class support
+
+
+## Medical Image Visualization
+
+Planned visualization capabilities:
+
+- Original medical image display
+- Predicted segmentation mask
+- Tumor region highlighting
+- Overlay visualization
+- Interactive image exploration
+
+
+## RAG Knowledge Assistant
+
+The platform will include a medical knowledge assistant powered by Retrieval-Augmented Generation.
+
+### Features
+
+- Cancer-related information retrieval
+- Tumor education resources
+- Treatment information overview
+- Medical terminology explanation
+- Frequently asked questions
+
+
+## Vector Database Integration
+
+Healthcare knowledge will be stored and retrieved using vector search technology.
+
+### Planned Knowledge Sources
+
+- Cancer care guidelines
+- Tumor information resources
+- Staging references
+- Patient education material
+- Medical FAQs
+
+
+### Possible Technologies
+
+- ChromaDB
+- FAISS
+- Pinecone
+
 
 ---
 
-## Project Name
+# Healthcare Recommendation Agent
 
-### OncoNavigator AI
+An AI agent will assist users in discovering relevant healthcare resources.
 
-**Meaning**
+### Planned Features
 
-* **Onco** → Oncology and cancer care
-* **Navigator** → Guides users from medical image analysis to healthcare resources
+- Specialist recommendations
+- Hospital discovery
+- Location-based healthcare search
+- Doctor and hospital information retrieval
+- Specialty-based filtering
 
-**Tagline**
-
-> **From Detection to Care**
-
-**Description**
-An AI-powered platform for tumor detection, segmentation, staging, healthcare guidance, and specialist recommendation that helps users move seamlessly from medical image analysis to informed healthcare decisions.
 
 ---
 
-## Disclaimer
+# Proposed Technology Stack
 
-This project is intended for educational, research, and development purposes. The system is not designed to replace professional medical diagnosis or treatment. Users should consult qualified healthcare professionals for medical advice and clinical decision-making.
+## Frontend
+
+- React.js
+- TypeScript
+- Tailwind CSS
+
+
+## Backend
+
+- FastAPI
+- Python
+
+
+## AI & Machine Learning
+
+- PyTorch
+- OpenCV
+- U-Net
+- Attention U-Net
+- UNet++
+- EfficientNet / ResNet
+- Vision Transformers
+
+
+## Agentic AI & RAG
+
+- LangGraph
+- LangChain
+- Embedding Models
+- Retrieval-Augmented Generation
+
+
+## Data Layer
+
+- PostgreSQL
+- ChromaDB / FAISS
+
+
+---
+
+# System Workflow
+
+Current and planned workflow:
