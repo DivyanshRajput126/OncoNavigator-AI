@@ -12,20 +12,25 @@ The platform provides an end-to-end workflow that enables automated tumor classi
 
 ### Current Development Stage
 
-🟢 **Core AI System Completed**
+🟢 **Core AI System & Backend Completed**
 
-The major AI components of the platform have been successfully developed and integrated:
+The major AI components and backend infrastructure of the platform have been successfully developed and integrated:
 
 * ✅ Tumor Classification Model
 * ✅ Tumor Segmentation Model
 * ✅ RAG-Based Medical Knowledge Assistant
 * ✅ Healthcare Recommendation Agent
+* ✅ FastAPI Backend Development
+* ✅ API Integration & Routing
+* ✅ Database Integration
+* ✅ Vector Database Integration
+* ✅ AI Service Orchestration
 
 ### Remaining Development
 
 * 🚧 Frontend Development
-* 🚧 Backend Integration
 * ⏳ Deployment & Production Setup
+* ⏳ End-to-End Testing & Optimization
 
 ---
 
@@ -186,21 +191,49 @@ The recommendation agent assists users in discovering relevant healthcare resour
 
 ---
 
+## Backend Infrastructure
+
+The backend serves as the central orchestration layer for AI inference, medical knowledge retrieval, and healthcare recommendation services.
+
+### Capabilities
+
+* FastAPI-based REST API architecture
+* AI model inference endpoints
+* Medical image upload handling
+* RAG pipeline integration
+* Healthcare recommendation APIs
+* Database connectivity
+* Vector database integration
+* Scalable service architecture
+
+### Components
+
+* FastAPI
+* PostgreSQL
+* ChromaDB / FAISS
+* LangChain
+* LangGraph
+* Groq API Integration
+
+---
+
 # 🧠 System Architecture
 
-The platform combines deep learning, vector search, and agentic workflows into a unified healthcare intelligence system.
+The platform combines deep learning, vector search, agentic workflows, and backend APIs into a unified healthcare intelligence system.
 
 ## Workflow
 
 1. User uploads a medical image.
-2. Classification model predicts tumor category.
-3. Segmentation model identifies tumor regions.
-4. Segmentation masks are generated.
-5. Results are visualized through the dashboard.
-6. User interacts with the Medical Knowledge Assistant.
-7. RAG pipeline retrieves relevant medical information.
-8. LLM generates context-aware responses.
-9. Healthcare Recommendation Agent provides doctor and hospital recommendations.
+2. Backend preprocessing pipeline prepares image data.
+3. Classification model predicts tumor category.
+4. Segmentation model identifies tumor regions.
+5. Segmentation masks are generated.
+6. Results are returned through backend APIs.
+7. User interacts with the Medical Knowledge Assistant.
+8. RAG pipeline retrieves relevant medical information.
+9. LLM generates context-aware responses.
+10. Healthcare Recommendation Agent provides doctor and hospital recommendations.
+11. Frontend dashboard visualizes predictions, segmentation results, and healthcare guidance.
 
 ---
 
@@ -298,6 +331,8 @@ The healthcare recommendation system helps bridge the gap between diagnosis and 
 
 * FastAPI
 * Python
+* REST APIs
+* Pydantic
 
 ## Deep Learning & Computer Vision
 
@@ -338,8 +373,10 @@ The healthcare recommendation system helps bridge the gap between diagnosis and 
 | Tumor Segmentation              | ✅ Completed    |
 | RAG Knowledge Assistant         | ✅ Completed    |
 | Healthcare Recommendation Agent | ✅ Completed    |
+| Backend Development             | ✅ Completed    |
+| Database Integration            | ✅ Completed    |
+| Vector Database Integration     | ✅ Completed    |
 | Frontend Development            | 🚧 In Progress |
-| Backend Integration             | 🚧 In Progress |
 | Deployment                      | ⏳ Pending      |
 
 ---
