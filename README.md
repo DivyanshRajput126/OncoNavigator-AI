@@ -1,114 +1,93 @@
 # OncoNavigator AI
 
-### From Detection to Care
+## From Detection to Care
 
-OncoNavigator AI is an AI-powered healthcare platform designed to assist in tumor analysis by combining deep learning-based medical image processing with Retrieval-Augmented Generation (RAG) and agentic AI.
+OncoNavigator AI is an AI-powered healthcare platform that combines medical image analysis, Retrieval-Augmented Generation (RAG), and agentic AI to assist in tumor diagnosis, medical knowledge retrieval, and healthcare navigation.
 
-The platform aims to provide an end-to-end workflow covering tumor detection, segmentation, classification, staging assistance, medical knowledge retrieval, and healthcare navigation.
-
-The project is currently under active development, with both the **tumor segmentation** and **tumor classification** modules successfully developed and trained.
+The platform provides an end-to-end workflow that enables automated tumor classification, tumor segmentation, AI-powered medical assistance, and intelligent healthcare recommendations. By integrating deep learning models with modern RAG architectures, OncoNavigator AI aims to bridge the gap between medical image analysis and actionable healthcare guidance.
 
 ---
 
-# Current Status
+# 🚀 Project Status
 
-🚧 **Project Under Active Development**
+### Current Development Stage
 
-## Completed Modules
+🟢 **Core AI System Completed**
 
-### ✅ Tumor Segmentation Model
+The major AI components of the platform have been successfully developed and integrated:
 
-* Deep learning-based tumor segmentation pipeline implemented.
-* Model trained to identify and segment tumor regions from medical images.
-* Generates pixel-level segmentation masks.
-* Supports visualization of tumor boundaries through segmentation overlays.
+* ✅ Tumor Classification Model
+* ✅ Tumor Segmentation Model
+* ✅ RAG-Based Medical Knowledge Assistant
+* ✅ Healthcare Recommendation Agent
 
-### ✅ Tumor Classification Model
+### Remaining Development
 
-* Deep learning-based brain tumor classification system developed and trained.
-* Automatically classifies medical images into tumor categories.
-* Supports multi-class prediction.
-* Provides confidence scores for predicted classes.
-* Integrated preprocessing and inference pipeline.
-
-### Supported Classification Categories
-
-* Glioma
-* Meningioma
-* Pituitary Tumor
-* No Tumor (if applicable to your dataset)
-
-## In Development
-
-* Tumor Stage Prediction
-* Medical Image Visualization Dashboard
-* RAG-Based Medical Knowledge Assistant
-* Healthcare Recommendation Agent
+* 🚧 Frontend Development
+* 🚧 Backend Integration
+* ⏳ Deployment & Production Setup
 
 ---
 
-# Tumor Segmentation Module
+# ✨ Features
 
-The segmentation component focuses on automatically identifying tumor regions from medical images.
+## AI-Powered Tumor Analysis
 
-### Capabilities
+* Brain tumor classification
+* Tumor region segmentation
+* Automated inference pipeline
+* Confidence score generation
+* Medical image preprocessing
+* Real-time prediction support
 
-* Tumor region localization
-* Pixel-level segmentation
-* Binary mask generation
-* Tumor boundary visualization
-* Automated evaluation using segmentation metrics
+## Medical Knowledge Assistant
 
-### Supported Tumor Categories
+* Retrieval-Augmented Generation (RAG)
+* Context-aware medical responses
+* Cancer education resources
+* Treatment information retrieval
+* Medical terminology explanations
+* FAQ support
 
-* Meningioma
-* Glioma
-* Pituitary Tumor
+## Healthcare Recommendation Agent
 
-### Model Architecture
-
-Current deep learning approach:
-
-* U-Net-based segmentation architecture
-* PyTorch implementation
-* Medical image preprocessing pipeline
-* Mask-based training and evaluation workflow
-
-### Evaluation Metrics
-
-* Mean Intersection over Union (IoU)
-* Dice Score
-* Pixel Accuracy
+* Doctor recommendations
+* Specialist discovery
+* Hospital recommendations
+* Location-aware healthcare search
+* Specialty-based filtering
+* Healthcare navigation assistance
 
 ---
 
-# Tumor Classification Module
+# ✅ Completed Modules
 
-The classification component focuses on identifying the tumor category from medical images.
+## Tumor Classification Module
+
+The classification system automatically identifies tumor types from medical images using deep learning.
 
 ### Capabilities
 
 * Multi-class tumor classification
 * Automated prediction pipeline
 * Confidence score generation
+* Fast inference
 * Medical image preprocessing
-* Fast inference for real-time usage
+* Data augmentation support
 
 ### Supported Classes
 
 * Glioma
 * Meningioma
 * Pituitary Tumor
-* No Tumor (if applicable)
+* No Tumor
 
 ### Model Architecture
 
-Current deep learning approach:
-
-* CNN-based classification architecture (replace with your model name)
-* PyTorch implementation
-* Medical image preprocessing and augmentation pipeline
-* Multi-class softmax prediction workflow
+* CNN-based Deep Learning Architecture
+* PyTorch Implementation
+* Softmax-based Multi-Class Classification
+* Image Augmentation Pipeline
 
 ### Evaluation Metrics
 
@@ -120,74 +99,195 @@ Current deep learning approach:
 
 ---
 
-# Planned Features
+## Tumor Segmentation Module
 
-## AI-Powered Tumor Analysis
+The segmentation system automatically identifies and localizes tumor regions within medical images.
 
-* Tumor detection and localization
-* Tumor segmentation
-* Tumor classification
-* Stage prediction assistance
-* Confidence scoring
-* Multi-class support
+### Capabilities
 
-## Medical Image Visualization
+* Tumor localization
+* Pixel-level segmentation
+* Binary mask generation
+* Tumor boundary extraction
+* Segmentation visualization
 
-Planned visualization capabilities:
+### Supported Tumor Categories
 
-* Original medical image display
-* Predicted segmentation mask
-* Tumor region highlighting
-* Overlay visualization
-* Interactive image exploration
+* Glioma
+* Meningioma
+* Pituitary Tumor
 
-## RAG Knowledge Assistant
+### Model Architecture
 
-The platform will include a medical knowledge assistant powered by Retrieval-Augmented Generation.
+* U-Net-Based Segmentation Network
+* PyTorch Implementation
+* Medical Image Preprocessing Pipeline
+* Mask-Based Training Workflow
 
-### Features
+### Evaluation Metrics
 
-* Cancer-related information retrieval
-* Tumor education resources
-* Treatment information overview
-* Medical terminology explanation
-* Frequently asked questions
+* Dice Score
+* Mean Intersection over Union (IoU)
+* Pixel Accuracy
 
-## Vector Database Integration
+---
 
-Healthcare knowledge will be stored and retrieved using vector search technology.
+## RAG-Based Medical Knowledge Assistant
 
-### Planned Knowledge Sources
+The platform includes a Retrieval-Augmented Generation pipeline designed to provide medically relevant, context-aware responses.
+
+### Capabilities
+
+* Medical information retrieval
+* Cancer-related knowledge assistance
+* Context-aware question answering
+* Treatment information support
+* Medical terminology explanations
+* Educational resource retrieval
+
+### RAG Workflow
+
+1. User submits a query.
+2. Query is embedded into vector space.
+3. Relevant medical documents are retrieved.
+4. Retrieved context is passed to the LLM.
+5. AI generates grounded responses using retrieved information.
+
+### Knowledge Sources
 
 * Cancer care guidelines
 * Tumor information resources
-* Staging references
-* Patient education material
-* Medical FAQs
-
-### Possible Technologies
-
-* ChromaDB
-* FAISS
-* Pinecone
+* Medical educational content
+* Patient support materials
+* Frequently asked questions
 
 ---
 
-# Healthcare Recommendation Agent
+## Healthcare Recommendation Agent
 
-An AI agent will assist users in discovering relevant healthcare resources.
+The recommendation agent assists users in discovering relevant healthcare resources based on their requirements.
 
-### Planned Features
+### Capabilities
 
+* Doctor recommendations
 * Specialist recommendations
 * Hospital discovery
-* Location-based healthcare search
-* Doctor and hospital information retrieval
+* Healthcare resource retrieval
 * Specialty-based filtering
+* Location-aware recommendations
+
+### Agent Workflow
+
+1. User submits a healthcare query.
+2. Agent identifies user intent.
+3. Relevant healthcare providers are retrieved.
+4. Results are filtered and ranked.
+5. Personalized recommendations are returned.
 
 ---
 
-# Proposed Technology Stack
+# 🧠 System Architecture
+
+The platform combines deep learning, vector search, and agentic workflows into a unified healthcare intelligence system.
+
+## Workflow
+
+1. User uploads a medical image.
+2. Classification model predicts tumor category.
+3. Segmentation model identifies tumor regions.
+4. Segmentation masks are generated.
+5. Results are visualized through the dashboard.
+6. User interacts with the Medical Knowledge Assistant.
+7. RAG pipeline retrieves relevant medical information.
+8. LLM generates context-aware responses.
+9. Healthcare Recommendation Agent provides doctor and hospital recommendations.
+
+---
+
+# 🔬 Medical Image Analysis Pipeline
+
+### Input
+
+* MRI Brain Scan
+* Medical Imaging Data
+
+### Processing
+
+#### Classification
+
+* Image preprocessing
+* Feature extraction
+* Tumor type prediction
+
+#### Segmentation
+
+* Tumor localization
+* Pixel-level mask generation
+* Region highlighting
+
+### Output
+
+* Predicted Tumor Type
+* Confidence Score
+* Segmentation Mask
+* Tumor Visualization
+
+---
+
+# 📚 RAG Pipeline Architecture
+
+### Components
+
+#### Document Processing
+
+* Document Loading
+* Text Chunking
+* Embedding Generation
+
+#### Retrieval Layer
+
+* Vector Search
+* Similarity Matching
+* Context Retrieval
+
+#### Generation Layer
+
+* Context Injection
+* Prompt Engineering
+* Response Generation
+
+### Features
+
+* Grounded Responses
+* Reduced Hallucinations
+* Context-Aware Answers
+* Medical Knowledge Retrieval
+
+---
+
+# 🏥 Healthcare Navigation System
+
+The healthcare recommendation system helps bridge the gap between diagnosis and treatment guidance.
+
+### Supported Recommendations
+
+* Neurologists
+* Oncologists
+* Neurosurgeons
+* Cancer Hospitals
+* Specialty Clinics
+* Healthcare Centers
+
+### Search Capabilities
+
+* Location-Based Search
+* Specialty-Based Search
+* Healthcare Resource Discovery
+* Intelligent Filtering
+
+---
+
+# 🛠 Technology Stack
 
 ## Frontend
 
@@ -199,31 +299,67 @@ An AI agent will assist users in discovering relevant healthcare resources.
 * FastAPI
 * Python
 
-## AI & Machine Learning
+## Deep Learning & Computer Vision
 
 * PyTorch
 * OpenCV
-* Vision Transformers
+* NumPy
+* Pandas
 
-## Agentic AI & RAG
+## RAG & Agentic AI
 
-* LangGraph
 * LangChain
-* Embedding Models
-* Retrieval-Augmented Generation
+* LangGraph
+* Groq API
+* Retrieval-Augmented Generation (RAG)
 
-## Data Layer
+## Search & Information Retrieval
+
+* DuckDuckGo Search
+* Vector Search
+* Semantic Retrieval
+
+## Vector Database
+
+* ChromaDB
+* FAISS
+
+## Database
 
 * PostgreSQL
-* ChromaDB / FAISS
 
 ---
 
-# System Workflow
+# 📈 Project Progress
 
-1. User uploads a medical image.
-2. Classification model predicts the tumor category.
-3. Segmentation model identifies and highlights tumor regions.
-4. Results are visualized through the dashboard.
-5. RAG assistant provides relevant medical knowledge and educational resources.
-6. Healthcare recommendation agent assists with hospital and specialist discovery.
+| Module                          | Status         |
+| ------------------------------- | -------------- |
+| Tumor Classification            | ✅ Completed    |
+| Tumor Segmentation              | ✅ Completed    |
+| RAG Knowledge Assistant         | ✅ Completed    |
+| Healthcare Recommendation Agent | ✅ Completed    |
+| Frontend Development            | 🚧 In Progress |
+| Backend Integration             | 🚧 In Progress |
+| Deployment                      | ⏳ Pending      |
+
+---
+
+# 🎯 Future Enhancements
+
+* Tumor Stage Prediction
+* Multi-Modal Medical Analysis
+* Advanced Visualization Dashboard
+* Clinical Report Generation
+* Medical Chat Interface
+* Patient History Integration
+* Cloud Deployment
+* Role-Based Authentication
+* Healthcare Analytics Dashboard
+
+---
+
+# 🌟 Vision
+
+OncoNavigator AI aims to create a unified healthcare intelligence platform that combines medical image analysis, medical knowledge retrieval, and healthcare navigation into a single AI-powered ecosystem.
+
+By leveraging Deep Learning, Retrieval-Augmented Generation (RAG), and Agentic AI, the platform seeks to assist patients, researchers, and healthcare professionals in making more informed healthcare decisions while improving access to relevant medical knowledge and healthcare resources.
