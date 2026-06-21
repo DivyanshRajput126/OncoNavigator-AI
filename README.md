@@ -112,7 +112,6 @@ It combines **medical imaging + AI reasoning + healthcare assistance** into one 
 
 ## 🧠 AI / Machine Learning
 - Custom CNN (PyTorch)
-- U-Net for segmentation
 - OpenCV
 - NumPy
 - Pandas
