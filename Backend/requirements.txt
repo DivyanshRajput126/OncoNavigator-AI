@@ -6,7 +6,7 @@ aiofiles
 numpy
 pandas
 
-opencv-python
+opencv-python-headless
 pillow
 
 torch
