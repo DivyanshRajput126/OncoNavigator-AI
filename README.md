@@ -219,7 +219,7 @@ OncoNavigator AI aims to build a unified healthcare intelligence system that int
 
 into a continuously improving ecosystem for better healthcare awareness and assistance.
 
-Watch the OncoNavigator project in action to explore its AI-powered medical imaging, RAG, and healthcare intelligence features.4
+Watch the OncoNavigator project in action to explore its AI-powered medical imaging, RAG, and healthcare intelligence features.
 
 ▶️ **[Watch the OncoNavigator Project Demo](https://drive.google.com/file/d/1ebq1zzaOi_5Ckdtj-JxPmYMubLAm8RXO/view?usp=sharing)**
 
