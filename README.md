@@ -147,14 +147,6 @@ It combines **medical imaging + AI reasoning + healthcare assistance** into one 
 
 ---
 
-# 🚀 Deployment Links
-
-- 🌐 Frontend: https://onconavigator-ai.netlify.app/  
-- ⚙️ Backend: https://onconavigator-ai-production.up.railway.app/  
-- 📄 API Docs: https://onconavigator-ai-production.up.railway.app/docs  
-
----
-
 # 🔄 Project Status
 
 OncoNavigator AI is a **fully deployed and working system**, but it is under **active improvement and continuous development**.
@@ -226,3 +218,7 @@ OncoNavigator AI aims to build a unified healthcare intelligence system that int
 - Conversational AI assistance  
 
 into a continuously improving ecosystem for better healthcare awareness and assistance.
+
+Watch the OncoNavigator project in action to explore its AI-powered medical imaging, RAG, and healthcare intelligence features.
+
+▶️ Watch the OncoNavigator Project Demo
