@@ -7,4 +7,4 @@ GROQ_API_KEY = os.getenv(
     "GROQ_API_KEY_DETAILS"
 )
 
-CHROMA_PATH = "../../../data"
+CHROMA_PATH = "../data"

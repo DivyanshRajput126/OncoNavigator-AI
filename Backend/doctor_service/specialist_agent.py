@@ -5,7 +5,7 @@ from .config import (GROQ_API_KEY)
 from .prompt import (SPECIALIST_PROMPT)
 
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    model="openai/gpt-oss-120b",
     temperature=0,
     api_key=GROQ_API_KEY
 )
